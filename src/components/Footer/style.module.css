@@ -48,13 +48,16 @@
   line-height: 91px;
   letter-spacing: 0em;
 }
+.address{
+  max-width: 600px; 
+}
 
 .address a {
   font-size: 30px;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: 0em;
-  max-width: 600px; 
+  
   margin: 0 auto;
   color: black;
 }
@@ -95,9 +98,22 @@
   .wrapper{
     display: block;
   }
+  .address{
+    max-width: 380px; 
+  }
+  .contacts{
+    max-width: 380px;
+  }
+  .contactTitle{
+    font-size: 30px;
+  }
+  .phoneNumber{
+    font-size: 40px;
+  }
+
 }
 
-@media screen and (max-width: 768px) {
+/* @media (max-width: 768px) {
   .contactTitle {
       font-size: 30px; 
       line-height: 40px; 
@@ -107,4 +123,4 @@
       font-size: 30px; 
       line-height: 40px; 
   }
-}
+} */
