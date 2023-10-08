@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.wrapper input {
+    width: 120px; /* Ширина инпута */
+    height: 40px; /* Высота инпута */
+    border: 1px solid black; /* Граничная рамка */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 5px; 
+    font-size: 14px; 
+    margin-right: 20px;
+    margin-top: 7px;
+  }
+  .wrapper{
+    display: flex;
+        font-weight: 900;
+    font-family: 'Freehand', cursive;
+    font-size: xx-large;
+  }
+  .wrapper p{
+    padding-right: 40px;
+  }
+
+  @media (max-width: 414px) {
+    
+    .wrapper{ 
+        padding: 10px;
+    }
+    
+}

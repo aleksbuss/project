@@ -1,23 +1,49 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import AllCategoriesPage from './pages/AllCategoriesPage';
+import AllProductsPage from './pages/AllProductsPage';
+import CartPage from './pages/CartPage';
+import MainPage from './pages/MainPage';
+import NavMenu from './components/NavMenu';
+import Footer from './components/Footer';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { getAllCategories } from './requests/categories';
+import { getAllProducts } from './requests/products';
+import SingleProductPage from './pages/SingleProductPage';
+import AllSalesPage from './pages/AllSalesPage';
+import SearchPage from './pages/SearchPage';
+import Error from './components/Error';
+
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {  
+    dispatch(getAllCategories)
+    dispatch(getAllProducts)
+  }
+,
+    []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <NavMenu />
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/products' element={<AllProductsPage />} />
+        <Route path='/categories' element={<AllCategoriesPage />} />
+        <Route path='/categories/:category' element={<AllProductsPage />} />
+        <Route path='/products/:id' element={<SingleProductPage />} />
+        <Route path='/cart' element={<CartPage />} />
+        <Route path='/sales' element={<AllSalesPage/>}/>
+        <Route path='*' element={<Error />} />
+        <Route path='/searched_products' element={<SearchPage />} />        
+      </Routes>
+      <Footer />
+      
     </div>
   );
 }

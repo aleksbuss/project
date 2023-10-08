@@ -1,0 +1,16 @@
+.categoryItem{
+    width: 100%;
+}
+
+.categoryItem img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 414px) {
+    .categoryItem{
+        width: 100%;
+        margin: 0;  
+    }
+  }

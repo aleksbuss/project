@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.shopping_cart {
+    font-family: 'Freehand', cursive;
+    font-size: xxx-large;
+    padding-left: 0;
+}
+
+.to_store {
+    display: flex;
+    justify-content: center;
+    font-family: 'Freehand', cursive;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.back_to {
+    text-decoration: none;
+}
+
+@media (max-width: 414px) {
+    .shopping_cart {
+        display: grid;
+        justify-content: center;
+    }
+
+    .to_store {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+}
+

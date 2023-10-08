@@ -1,0 +1,28 @@
+.button{
+    border: 2px solid black;
+    background: #faa307;
+    border-radius: 60px;
+    color: #000400;
+    font-size: 30px;
+    padding: 7px 120px;
+    font-family: 'Freehand', cursive;
+    font-size: xxx-large; 
+    cursor: pointer; 
+}
+
+.wrapper{
+   margin-top: 60px;
+}
+
+@media (max-width: 414px) {
+    .button {
+        
+        font-size: 30px;
+        padding: 7px 76px;
+        
+    }
+    .wrapper{
+        margin-top: 20px;
+        padding: 30px;
+     }
+}

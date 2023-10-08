@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.wrapperLabel{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Freehand', cursive;
+    font-size: xx-large;   
+}
+
+.wrapperLabel p{
+    padding-right: 30px;
+
+}
+.wrapperLabel select{
+    width: 120px; /* Ширина инпута */
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;  
+}
+
+@media (max-width: 414px) {   
+    .wrapperLabel{
+        display: flex;
+        gap: 2px;
+        justify-content: left;
+        padding: 10px;
+    }
+    .wrapperLabel p{
+        padding-right: 20px;
+    }
+}
+
+

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+    font-family: 'Freehand', cursive;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    border-radius: 21px;
+    border: 2px solid #000;
+    padding: 20px;
+    height: min-content;
+}
+
+.order>p {
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.order_details {
+    font-size: xxx-large;
+}
+
+.emptycart {
+    display: flex;
+    justify-content: center;
+    width: 98%;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total :last-child {
+    font-size: xxx-large;
+}
+
+.total :first-child {
+    padding-top: 18px;
+    font-size: xx-large;
+}
+
+.form_button {
+    display: flex;
+    justify-content: center;
+}
+
+.form_input {
+    display: block;
+    justify-content: center;
+}
+
+.form_input input {
+    padding-top: 30px;
+    padding: 26px 2px;
+}
+
+.form_button button {
+    font-size: 40px;
+    padding: 30px 180px;
+}
+
+.text {
+    font-size: x-large;
+}
+
+@media (max-width: 414px) {
+    .wrapper {
+        display: block;
+    }
+    .form_input {
+        margin: 10px 0;
+    }
+    .order {
+        margin: 30px;
+    }
+    .form_button button {
+        font-size: 30px;
+        padding: 10px 62px;
+    }
+}

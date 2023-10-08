@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.sale_products{
+   
+    padding-left: 10px;
+    font-family: 'Freehand', cursive;
+    font-size: xx-large;
+    
+}
+
+@media (max-width: 414px){
+    .sale_products{
+        display: grid;
+        text-align: center;
+        font-size: x-large;
+        
+        padding-top: 20px;
+    }
+}
+

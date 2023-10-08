@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.filter_sort{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.header h1{
+    font-family: 'Freehand', cursive;
+    font-size: xxx-large;
+    padding-top: 25px;
+}
+
+@media (max-width: 414px) {
+    
+    .filter_sort{
+        display: block;  
+    }
+    .header h1{
+        display: grid;
+        justify-content: center;
+    }
+}

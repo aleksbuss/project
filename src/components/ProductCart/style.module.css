@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.wrapper{
+    position: relative;
+    font-family: 'Freehand', cursive;
+}
+
+.wrapper button{
+    position: relative;
+    font-family: 'Freehand', cursive;
+    font-size: xx-large;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+}
+
+.product img{
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.wrapper button{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%);   
+}
+
+.wrapper:hover button{
+    visibility: visible;
+    opacity: 1;
+}
+
+.price_wrapper{
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-large;
+}
+.price{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.old_price{
+    font-size: 30px;
+    text-decoration: line-through;
+    color: #8b8b8b;
+}
+
+.price span,
+.old_price{
+    font-size: 0.7em;
+    padding-top: 12px;
+}
+
+.discount{
+    font-size: 28px;
+    color: #ff32a1;
+    padding-top: 12px;
+    padding-right: 40px;
+}
+
+.add_to_cart{
+    border: 2px solid black;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background:#ffac13;
+    color: black;
+    width: 80%;
+    visibility: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.title{
+    font-size: 19px;
+    font-weight: 500;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+@media (max-width: 414px) {
+    
+    .wrapper{
+        padding: 20px ;
+        
+        
+    }
+
+    .wrapper button{
+        position: absolute;
+        bottom: 114px;
+        left: 50%;   
+    }
+
+    .wrapper button{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    
+}

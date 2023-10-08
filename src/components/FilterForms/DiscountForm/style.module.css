@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.discount{
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.discount p{
+  padding-right: 20px;
+}
+
+.discountLabel {
+  display: flex; /* Размещаем текст и чекбокс в одной строке */
+  align-items: center; /* Выравниваем элементы вертикально по центру */
+  font-family: 'Freehand', cursive;
+  font-size: xx-large;
+}
+
+.discountLabel input{
+  width: 40px; /* Ширина инпута */
+  height: 25px; /* Высота инпута */
+  border-radius: 40px; 
+}
+
+@media (max-width: 414px) {
+  .discount p{
+    padding-left: 10px;
+  }
+}

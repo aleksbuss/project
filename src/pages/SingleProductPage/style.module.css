@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 35px;
+}
+.title{
+    font-family: 'Freehand', cursive;
+    font-size: xx-large;
+}
+.wrapper_product img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.wrapper_product{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 130px;
+    padding-bottom: 40px;
+}
+
+.add_to_cart{
+    border-radius: 50px;
+    border: 2px solid black;
+    background:  #faa307;
+    padding: 8px 200px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    color: black;
+    font-weight: 600; 
+    cursor: pointer;
+    font-family: 'Freehand', cursive;
+    font-size: xxx-large;
+}
+.prices{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;  
+  }
+
+.discount{
+    font-size: 28px;
+    color: #ff32a1;
+    font-family: 'Freehand', cursive;
+} 
+ 
+.price{
+    font-size: 70px;
+    font-weight: 600;
+    font-family: 'Freehand', cursive;
+}
+
+.oldPrice{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Freehand', cursive;
+}
+
+.description :first-child{
+    border-top: 2px dashed #c0c0c0;
+    padding-top: 60px;
+    font-family: 'Freehand', cursive;
+    font-size: xxx-large;
+}
+
+.description :nth-child(2){
+    font-family: 'Freehand', cursive;
+    font-size: x-large;
+}
+
+@media (max-width: 414px){
+
+    .add_to_cart{
+        margin-left: 14px;
+        padding: 10px 80px;
+        margin-top: 40px;
+    }
+    .wrapper{
+        display: block;
+        justify-content: center;  
+    }
+    .wrapper_product{
+        gap: 0;
+    }
+    .prices{
+      display: flex;
+      justify-content: flex-start;
+      gap: 80px;
+    }
+    .price{
+        padding-top: 20px;
+    }
+
+    .oldPrice{
+        margin-bottom: 20px;
+    }
+    .discount{
+        margin-bottom: 22px;
+    }
+    .title{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .wrapper_product button{
+        margin-right: 0px;
+    }
+    .wrapper_product{
+        display: block;
+        
+        width: 100%;
+        padding: 10px;       
+    }
+    .description :first-child{
+        padding-top: 10px;
+    }
+
+    .description :last-child{
+        padding: 10px;
+    }
+
+    
+}
