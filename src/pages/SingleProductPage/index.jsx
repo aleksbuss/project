@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { getSingleProduct } from '../../requests/products';
 import s from './style.module.css'
 import { addTOCartAction } from '../../store/reducers/cartReducer';
 import Wrapper from '../../components/UI/Wrapper';
@@ -11,9 +10,8 @@ export default function SingleProductPage() {
   const { id } = useParams();
   const dispatch = useDispatch();
 
-  useEffect(() => dispatch(getSingleProduct(id)), [dispatch]);
 
-  const singleProduct = useSelector(state => state.singleProduct);
+  const singleProduct = useSelector(state => state.allProducts.find(el => el.id === +id));
   
   const { title, price, discont_price, image, description} = singleProduct
   const discount = discont_price === null ? " " : Math.ceil(((price - discont_price) / price) * 100) + "%";
@@ -35,10 +33,10 @@ export default function SingleProductPage() {
             
           <button className={s.add_to_cart} onClick={() => dispatch(addTOCartAction({ id: +id, title, price, image }))}>Add to cart</button>
             
-          <p className={s.description}>
+          <div className={s.description}>
             <p>Desciption</p>
             <p>{description}</p>
-          </p>
+          </div>
       </div>
      </div>
     </div>

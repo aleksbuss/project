@@ -1,23 +1,23 @@
 
 
 
-const SEARCH_PRODUCTS = 'SEARCH_PRODUCTS';
+// const SEARCH_PRODUCTS = 'SEARCH_PRODUCTS';
 
-export const searchProductsAction = payload => ({type: SEARCH_PRODUCTS,payload});
+// export const searchProductsAction = payload => ({type: SEARCH_PRODUCTS,payload});
 
-const initialState = {
-  searchResults: [], // Инициализируем пустым массивом, чтобы хранить результаты поиска
-};
+// const initialState = {
+//   searchResults: [], // Инициализируем пустым массивом, чтобы хранить результаты поиска
+// };
 
-export const searchReducer = (state = initialState, action) => {
-  if (action.type === SEARCH_PRODUCTS) {
+// export const searchReducer = (state = initialState, action) => {
+//   if (action.type === SEARCH_PRODUCTS) {
     
-    console.log(action.payload);
-    return {...state,searchResults: action.payload};
-  } else {
-    return state;
-  }
-};
+//     console.log(action.payload);
+//     return {...state,searchResults: action.payload};
+//   } else {
+//     return state;
+//   }
+// };
 
 
 

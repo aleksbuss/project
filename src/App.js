@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import AllCategoriesPage from './pages/AllCategoriesPage';
 import AllProductsPage from './pages/AllProductsPage';
@@ -13,8 +12,9 @@ import { getAllCategories } from './requests/categories';
 import { getAllProducts } from './requests/products';
 import SingleProductPage from './pages/SingleProductPage';
 import AllSalesPage from './pages/AllSalesPage';
-import SearchPage from './pages/SearchPage';
+// import SearchPage from './pages/SearchPage';
 import Error from './components/Error';
+import ProductsByTheCategoryPage from './pages/ProductsByCategoriesPage';
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
     dispatch(getAllProducts)
   }
 ,
-    []);
+    [dispatch]);
 
   return (
     <div >
@@ -35,12 +35,12 @@ function App() {
         <Route path='/' element={<MainPage />} />
         <Route path='/products' element={<AllProductsPage />} />
         <Route path='/categories' element={<AllCategoriesPage />} />
-        <Route path='/categories/:category' element={<AllProductsPage />} />
+        <Route path='/categories/:category' element={<ProductsByTheCategoryPage />} />
         <Route path='/products/:id' element={<SingleProductPage />} />
         <Route path='/cart' element={<CartPage />} />
         <Route path='/sales' element={<AllSalesPage/>}/>
         <Route path='*' element={<Error />} />
-        <Route path='/searched_products' element={<SearchPage />} />        
+        {/* <Route path='/searched_products' element={<SearchPage />} />         */}
       </Routes>
       <Footer />
       

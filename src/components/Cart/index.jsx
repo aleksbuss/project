@@ -16,7 +16,7 @@ export default function Cart() {
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart_state));
-  }, [cart_state]);
+  }, [cart_state, dispatch]);
 
   const total = cart_state.reduce(
     (acc, el) => acc + (el.discont_price ?? el.price) * el.count,
