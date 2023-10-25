@@ -9,16 +9,39 @@
     border-radius: 60px;
     font-size: 40px;
     background: white;
-    padding: 10px 0;    
+    height: 98px;
+    
+}
+@media (max-width: 1440px) {
+    .input {
+        
+        width: 88%;
+        height: 80px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1024px){
+    .input {
+        margin-top: -40px;
+        width: 80%;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: -10px;
+    }
 }
 
 @media (max-width: 414px) {
     .input {
-        width: 80%;
-        height: 80%;
-        font-size: 24px;
+        width: 84%;
+        height: 64px;
+        margin-top: 20px;
+         
+        
+        font-size: 30px;
     }
 }
+
 
 
 

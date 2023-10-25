@@ -11,8 +11,7 @@ export default function AllSalesPage() {
 
   const products_with_discount = products
     .filter((el) => el.discont_price !== null)
-    .filter((el) => el.show_product === true)
-    .sort(() => Math.random() - 0.5);
+    
 
   return (
     <Wrapper>
@@ -21,8 +20,9 @@ export default function AllSalesPage() {
         <div className={s.filter_sort}>
           <FilterForm />
           <SortForm />
+          
         </div>
-        <ProductsContainer products={products_with_discount} />
+        <ProductsContainer products={products_with_discount} /> 
       </div>
     </Wrapper>
   );

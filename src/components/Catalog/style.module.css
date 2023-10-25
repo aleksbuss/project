@@ -23,15 +23,34 @@
     cursor: pointer;
     border-radius: 40px;
     padding: 2px 10px;
-    gap: 300px;
+    
     background-color: #ffac13;    
+}
+
+@media (max-width: 1024px){
+    .title_button p{ 
+        font-size: 40px;
+        font-weight: 300;
+        
+    }
+    .all_categories{
+        font-size: 26px;
+        font-weight: 400;
+        margin-top: 12px;
+    }
+
+    .title_button{
+        display: flex;
+        gap: 140px;
+    }
+    
 }
 
 @media (max-width: 414px) {
     .title_button { 
         display: block;
         text-align: center;
-        padding-right: 28px;
+        
     }
     .title_button p{ 
         display: none;

@@ -62,6 +62,10 @@
   color: black;
 }
 
+.address p{
+  padding-top: 10px;
+}
+
   .iframe_container {
     position: relative;
     overflow: hidden;

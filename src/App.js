@@ -27,7 +27,8 @@ function App() {
   }
 ,
     [dispatch]);
-
+  
+  
   return (
     <div >
       <NavMenu />

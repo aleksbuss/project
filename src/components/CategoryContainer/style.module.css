@@ -12,6 +12,13 @@
     align-items: center;
 }
 
+@media (max-width: 1024px){
+    .wrapper{
+       
+        gap: 0px;
+    }
+}
+
 @media (max-width: 414px) {
     .wrapper {
     display: grid;
