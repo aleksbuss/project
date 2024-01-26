@@ -12,11 +12,24 @@
     background: #faa307;
     border-radius: 40px;
     color: #000400;
+    box-shadow: #001800 2px 1px 0 0;
     font-size: 30px;
     padding: 7px 30px;
     font-family: 'Freehand', cursive;
     font-size: x-large;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
+
+.navButton:hover {
+    background-color: #f7ad25;
+  }
+  .navButton:active {
+    box-shadow: #422800 2px 1px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
 
 .links{
     display: flex;

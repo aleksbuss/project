@@ -5,6 +5,9 @@ import facebook from "./facebook.png";
 import instagram from "./instagram.png";
 
 export default function Footer() {
+
+  const year = new Date().getFullYear(); // get the current year
+
   return (
     <Wrapper>
       <footer className={s.footer}>
@@ -41,6 +44,7 @@ export default function Footer() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+        <p className={s.copyright}>Copyright &copy; {year} MAJA Shop. All rights reserved.</p> {/* Add the copyright and year information */}
       </footer>
     </Wrapper>
   );

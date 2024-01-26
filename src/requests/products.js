@@ -1,10 +1,27 @@
 import { loadAllProductsAction } from "../store/reducers/allProductsReducer"
 
 
+// export const getAllProducts = (dispatch) => {
+//     fetch(`http://localhost:3333/products/all`)
+//       .then(res => res.json())
+//       .then(json => dispatch(loadAllProductsAction(json)))
+// }
+
+
 export const getAllProducts = (dispatch) => {
-    fetch(`http://localhost:3333/products/all`)
-      .then(res => res.json())
-      .then(json => dispatch(loadAllProductsAction(json)))     
+  console.log("getAllProducts function called");
+  fetch(`http://localhost:3333/products/all`)
+    .then(res => {
+      console.log("Response from server received", res);
+      return res.json();
+    })
+    .then(json => {
+      console.log("JSON parsed, dispatching action with data", json);
+      dispatch(loadAllProductsAction(json));
+    })
+    .catch(error => {
+      console.error("Error occurred while fetching products", error);
+    });
 }
 
 export function getPhoneNumber(obj){

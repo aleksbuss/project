@@ -95,6 +95,14 @@
   margin: 0 20px; 
 }
 
+.copyright {
+  font-size: 14px;
+  color: #888;
+  text-align: center; /* Add this line */
+  margin-top: 20px;
+  padding: 10px;
+}
+
 @media (max-width: 414px){
   .iframe_container iframe{
     width: 100%;

@@ -10,14 +10,16 @@ export default function ProductsContainer({
 
   return (
     <div className={s.products_container}>
-      {paramsCategory
+      {
+        paramsCategory
         ? products
             .filter((el) => el.categoryId === +paramsCategory)
             .filter((el) => el.show_product && el.show_product_by_sale)
             .map((el) => <ProductCart key={el.id} {...el} />)
         : products
             .filter((el) => el.show_product && el.show_product_by_sale)
-            .map((el) => <ProductCart key={el.id} {...el} />)}
+            .map((el) => <ProductCart key={el.id} {...el} />)
+      }
     </div>
   );
 }
