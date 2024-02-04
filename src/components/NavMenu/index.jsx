@@ -4,7 +4,7 @@ import s from "./style.module.css";
 import logo from "./logo.png";
 import cart from "./cart.png";
 import WrapperMain from "../UI/WrapperMain";
- import Search from '../Search'
+
 
 export default function NavMenu() {
   return (
@@ -18,7 +18,7 @@ export default function NavMenu() {
             <div className={s.navButton}>Categories</div>
           </Link>
           <div className={s.search}>
-          <Search/>
+         
         </div>   
         </div>
         <div className={s.navlink_wrapper}>

@@ -10,7 +10,7 @@ export default function SaleProducts() {
   const products_with_discount_random = products
     .filter((el) => el.discont_price !== null)
     .sort(() => Math.random() - 0.7)
-    .slice(0, 3);
+    .slice(0, 5);
 
   return (
     <Wrapper>

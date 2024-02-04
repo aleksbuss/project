@@ -25,6 +25,17 @@
   height: auto;
 }
 
+.imageContainer img:active {
+  transform: scale(0.85);
+  transition: transform 0.2s ease-in-out;
+}
+
+.imageContainer img:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s ease-in-out;
+}
+
+
 @media (max-width: 1600px) {
   .imageContainer {
     left: 360px;

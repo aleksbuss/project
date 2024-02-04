@@ -7,6 +7,16 @@
     background-color: #fffffb; 
 }
 
+.img:hover {
+    transform: scale(1.12);
+    transition: transform 0.5s ease-in-out;
+}
+
+.img:active {
+    transform: scale(0.80);
+    transition: transform 0.3s ease-in-out;
+}
+
 .navButton {
     border: 1px solid black;
     background: #faa307;

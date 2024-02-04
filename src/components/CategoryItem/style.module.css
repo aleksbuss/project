@@ -8,6 +8,10 @@
     object-fit: contain;
 }
 
+.categoryItem h2{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
 @media (max-width: 414px) {
     .categoryItem{
         width: 100%;
